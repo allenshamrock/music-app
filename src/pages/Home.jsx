@@ -59,7 +59,7 @@ const submitHandler = (e) =>{
 			<p>{item.artist.name}</p>
 		</div>
 	})}
-   </div>git branch
+   </div>
         
    
   )
