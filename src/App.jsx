@@ -1,12 +1,18 @@
-import Home from "./pages/Home.jsx"
-import './index.css'
+// import Home from "./pages/Home.jsx"
+// import Navbar from "./componenets/navbar/Navbar.jsx"
+import Header from "./componenets/navbar/Header.jsx"
+import { RootContextProvider } from './context/RootContext.jsx'
 function App() {
  
 
   return (
-    <>
-     <Home/>
-    </>
+    <RootContextProvider>
+      <>
+   <Header/>
+   {/* <Home/> */}
+   {/* <Navbar/> */}
+  </>
+    </RootContextProvider>
   )
 }
 
