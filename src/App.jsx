@@ -1,19 +1,19 @@
-// import Home from "./pages/Home.jsx"
-// import Navbar from "./componenets/navbar/Navbar.jsx"
-import Header from "./componenets/navbar/Header.jsx"
-import { RootContextProvider } from './context/RootContext.jsx'
-function App() {
- 
+import React from "react";
+import Hero from "./componenets/main/Hero.jsx"
+import Navbar from "./componenets/Navbar";
 
+const App = () => {
   return (
-    <RootContextProvider>
-      <>
-   <Header/>
-   {/* <Home/> */}
-   {/* <Navbar/> */}
-  </>
-    </RootContextProvider>
-  )
-}
+    <div className="flex">
+      <Navbar />
 
-export default App
+      <div className="flex-grow bg-gray-100">
+        <header className="bg-gray-800 py-4 px-6">
+          <Hero/>
+        </header>
+      </div>
+    </div>
+  );
+};
+
+export default App;
